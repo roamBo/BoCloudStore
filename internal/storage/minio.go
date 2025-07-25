@@ -23,7 +23,7 @@ func NewMinioClient(cfg MinioConfig) (*minio.Client, error) {
 	if err != nil {
 		return nil, err
 	}
-	bucketName := "cloudStor"
+	bucketName := "cloudstor"
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 
